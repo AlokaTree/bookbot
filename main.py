@@ -9,8 +9,6 @@ def main():
     chars_dict = get_chars_dict(text)
     letters_found = get_letters(chars_dict)
     print("--- End report ---")
-    
-#    print(letters_found)
 
 
 def get_num_words(text):
@@ -30,10 +28,8 @@ def get_chars_dict(text):
 
 
 def get_letters(chars_dict):
-#    new_dict = []
     for key, value in sorted(chars_dict.items()):
         if key.isalpha() == True:
-            #new_dict.append({key:value})
             print(f"the '{key}' character was found {value} times")
 
 
